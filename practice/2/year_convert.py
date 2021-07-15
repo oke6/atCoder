@@ -19,4 +19,4 @@ def convert_year(n):
 
   return wareki + str(year) + '年'
 
-print(convert_year(1995))
+print(convert_year(2010))
