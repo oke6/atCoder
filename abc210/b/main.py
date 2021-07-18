@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
-s = input()
 n = int(input()) 
-a, b, c = input().split()
-list = list(map(int, input().split()))
-h, n = map(int, input().split())
+s = input()
+
+for i in range(n+1):
+  if s[i] == '1':
+    if i % 2 == 0:
+      print('Takahashi')
+    else:
+      print('Aoki')
+    break
