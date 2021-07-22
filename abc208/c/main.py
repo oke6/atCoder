@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
-s = input()
-n = int(input()) 
-a, b, c = input().split()
+n, k = map(int, input().split())
 list = list(map(int, input().split()))
-h, n = map(int, input().split())
+
+count = k // n
+mod = k % n
+
+sorted = list.sorted()
+
+for i in range(n):
+  if 
+  print()
