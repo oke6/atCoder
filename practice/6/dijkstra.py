@@ -12,6 +12,10 @@ def dijkstra(edges, num_v):
         r = i
     
     u = q.pop(q.index(r))
+    print(u)
+    print(q)
+    print(dist)
+    print('========')
     for edge in edges[u]:
       if dist[edge[0]] > dist[u] + edge[1]:
         dist[edge[0]] = dist[u] + edge[1]
