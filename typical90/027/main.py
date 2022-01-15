@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
+#s = input()
 n = int(input()) 
 
 dict = {}
 for i in range(n):
-  name = input()
-  if not (name in dict.keys()):
+  s = input()
+  if not (s in dict):
+    dict[s] = 1
     print(i+1)
-    dict[name] = 1
-
-
-

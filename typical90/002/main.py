@@ -12,10 +12,10 @@ for bit in range(2**n):
   for i in range(n):
     if (bit >> i) & 1:
       tmp += 1
-      kakko = kakko + '('
+      kakko += '('
     else:
       tmp -= 1
-      kakko = kakko + ')'
+      kakko += ')'
     if tmp < 0:
       break
   if tmp == 0:

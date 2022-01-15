@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 from collections import deque
-q = int(input()) 
+Q = int(input())
+d = deque()
 
-deck = deque()
-for i in range(q):
+for i in range(Q):
   t, x = map(int, input().split())
   if t == 1:
-    deck.appendleft(x)
-  elif t == 2:
-    deck.append(x)
+    d.appendleft(x)
+  elif t ==2:
+    d.append(x)
   else:
-    print(deck[x-1])
+    print(d[x-1])

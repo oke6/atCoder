@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
-n, m = map(int, input().split())
+N, M = map(int, input().split())
 
-tops = {}
-count = 0
-for i in range(m):
-  a, b = map(int, input().split())
-  large = max(a, b)
-  if large in tops:
-    tops[large] += 1
+count = {}
+for i in range(M):
+  a,b = map(int, input().split())
+  larger = max(a, b)
+  if (larger in count):
+    count[larger] += 1
   else:
-    tops[large] = 1
+    count[larger] = 1
 
-for v in tops.values():
-  if v == 1:
-    count += 1
+ans = 0
+for i in range(1, N+1):
+  if i in count:
+    if count[i] == 1:
+      ans += 1
 
-print(count)
-
+print(ans)

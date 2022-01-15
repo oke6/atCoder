@@ -8,5 +8,5 @@ mod = k % n
 sorted = list.sorted()
 
 for i in range(n):
-  if 
+  if sorted[i]
   print()
